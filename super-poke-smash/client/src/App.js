@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
-import Login from "./containers/Login";
+import Login from "./login/Login";
+import About from './Pages/about/about.js';
 
 
 
@@ -10,9 +11,10 @@ class App extends Component {
     return (
       <div>   
           <BrowserRouter>
-      <div className="Login">
-          <Route path="/login" exact component={Login} />
-        </div>
+      <div className="">
+          <Route exact path="/" component={Login} />
+          <Route path="/about" component={About} />
+      </div>
       </BrowserRouter>
       </div>
     );
