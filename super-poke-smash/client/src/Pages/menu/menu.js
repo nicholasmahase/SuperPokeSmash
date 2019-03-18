@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BackGroundImage from "./pokemon-background.jpg";
 import "./menu.css";
 export default class Menu extends Component {
     
@@ -11,6 +12,7 @@ export default class Menu extends Component {
             </div>
         </div>
         <div className="container">
+        <img className="backgroundimage" src={BackGroundImage} alt="pokemon background" />
             <div className="row">
                 <div className="col-md-12">
                     <div className="menulist">
