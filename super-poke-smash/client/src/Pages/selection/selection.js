@@ -1,19 +1,31 @@
 import React, { Component } from "react";
 
-import CustomText from "../components/CustomText";
-import PokemonList from "../components/PokemonList";
-import ActionList from "../components/ActionList";
+import pokeman from "../../data/pokemon_data";
 
 class Selection extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date()
+      pokeman: []
     };
   }
 
+  componentDidMount = () => {
+    this.setState({ pokeman });
+  };
   render() {
-    return <div> Hellos </div>;
+    console.log(this.state.pokeman);
+
+    return (
+      <React.Fragment>
+        {this.state.pokeman.map((item, index) => (
+          <div key={index}>
+            {item.id} --- {item.label}
+            <img src={item.sprite} />
+          </div>
+        ))}
+      </React.Fragment>
+    );
   }
 }
 
