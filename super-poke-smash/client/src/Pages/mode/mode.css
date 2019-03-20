@@ -1,6 +1,6 @@
 .jumbotron{
     background-image: url("./International_Pokémon_logo.svg.png");
-    background-size: cover;
+    /*background-size: cover;*/
     background-position: center;
 }
 

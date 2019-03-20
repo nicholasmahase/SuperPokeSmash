@@ -19,7 +19,7 @@ class Selection extends Component {
     return (
       <React.Fragment>
         {this.state.pokeman.map((item, index) => (
-          <div key={index}>
+          <div id = "selectionDiv" key={index}>
             {item.id} --- {item.label}
             <img src={item.sprite} />
           </div>

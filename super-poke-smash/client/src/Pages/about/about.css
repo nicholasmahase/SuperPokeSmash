@@ -7,3 +7,12 @@
     margin-left: 0;
     margin-right: 0;
 }
+.container {
+    max-width: 450px !important;
+}
+div#nich {
+    float: left;
+}
+div#rich {
+    float: right;
+}
