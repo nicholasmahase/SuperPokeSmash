@@ -1,0 +1,26 @@
+.jumbotron{
+    background-image: url("./International_Pokémon_logo.svg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    top: 240px;
+}
+
+body {
+    background-image: url("./mode_background.jpg");
+    background-size: cover;
+}
+
+
+.btn-block {
+    display: block;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    top: 200px;
+}
