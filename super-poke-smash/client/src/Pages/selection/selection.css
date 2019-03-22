@@ -1,0 +1,5 @@
+div#selectionDiv {
+    display: inline-block;
+    border: 2px black solid;
+    overflow: overlay;
+}

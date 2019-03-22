@@ -6,9 +6,11 @@ export default class Mode extends Component {
    return (
    <div>
      <div className="jumbotron">
-       <h1>Game Mode</h1>
-       <button type="button" id="singleBtn" className="btn btn-primary">Single Player</button>
-       <button type="button" id="multiBtn" className="btn btn-success">Multiplayer</button>
+       <h1>Choose Your Game Mode !</h1>
+       </div>
+       <div>
+       <a button type="button" id="singleBtn" className="btn btn-primary btn-lg btn-block" href="/selection">Single Player</a>
+       <a button type="button" id="multiBtn" className="btn btn-primary btn-lg btn-block" href="#">MultiPlayer</a>
        </div>
        </div>
  );
