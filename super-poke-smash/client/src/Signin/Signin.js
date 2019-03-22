@@ -33,11 +33,6 @@ export default class Signin extends Component {
       <div className="card">
         <div className="card-header">
           <h1>Sign In</h1>
-          <div class="d-flex justify-content-end social_icon">
-            <span><i className="fab fa-facebook-square"></i></span>
-            <span><i className="fab fa-google-plus-square"></i></span>
-            <span><i className="fab fa-twitter-square"></i></span>
-          </div>
         </div>
         <div className="card-body">
           <form id="signin" name="signin" method="post" action="/signin">

@@ -33,6 +33,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "pokedex": "^1.1.0"
+    "pokedex": "^1.1.0",
+    "react-validation": "^3.0.7"
   }
 }
