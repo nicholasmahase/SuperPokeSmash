@@ -5,8 +5,8 @@ var PokedexA = require('pokedex'),
 pokedex = new PokedexA();
 
 console.log( pokedex.pokemon()[0] );
-document.write( pokedex.pokemon()[0].name );
-document.write( pokedex.pokemon()[0].sprites.normal );
+// document.write( pokedex.pokemon()[0].name );
+// document.write( pokedex.pokemon()[0].sprites.normal );
 
 
 
