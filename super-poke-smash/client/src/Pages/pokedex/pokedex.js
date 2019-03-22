@@ -18,7 +18,7 @@ export default class Pokedex extends Component {
 
      // Inside the App class
      handleOnClick(id) {
-        fetch(`http://pokeapi.co/api/v2/pokemon/${id}/`)
+        fetch(`https://cors-anywhere.herokuapp.com/http://pokeapi.co/api/v2/pokemon/${id}/`)
           .then(res => res.json())
           .then(data => {
             const pokemon = new Pokemon(data);
