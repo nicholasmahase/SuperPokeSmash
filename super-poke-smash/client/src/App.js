@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
-import Login from "./login/Login";
+import Signup from "./Signup/Signup";
+import Signin from "./Signin/Signin";
 import About from './Pages/about/about.js';
 import Arena from './Pages/arena/arena.js';
 import Menu from './Pages/menu/menu.js';
@@ -19,7 +20,8 @@ class App extends Component {
       <div>   
           <BrowserRouter>
       <div className="">
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Signup} />
+          <Route exact path="/signin" component={Signin} />
           <Route path="/about" component={About} />
           <Route path="/chat" component={LiveChat} />
           <Route path="/arena" component={Arena} />

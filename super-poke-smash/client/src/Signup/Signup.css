@@ -1,0 +1,24 @@
+.container {
+  margin: 2% auto;
+  background: #fff;
+  padding: 50px;
+  opacity: 0.7;
+  border-radius: 30px;
+  text-align: center;
+}
+h1 {
+  top: 0 !important;
+}
+form {
+  display: block !important;
+}
+.col-xs-4 {
+  margin: 20px;
+}
+.loginlink {
+  font-size: inherit;
+}
+button {
+  margin-left: 0 !important;
+  width: 44%;
+}
