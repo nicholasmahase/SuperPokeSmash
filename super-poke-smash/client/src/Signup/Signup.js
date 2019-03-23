@@ -26,6 +26,8 @@ export default class Signup extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    //AXion POST REQUEST
+    //TODO POST REQUEST TO /api/users/register
   }
 
   render() {
