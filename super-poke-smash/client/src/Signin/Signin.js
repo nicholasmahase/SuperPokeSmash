@@ -35,7 +35,7 @@ export default class Signin extends Component {
           <h1>Sign In</h1>
         </div>
         <div className="card-body">
-          <form id="signin" name="signin" method="post" action="/signin">
+          <form id="signin" name="signin" method="post" action="/mode">
           <div className="col-xs-4">
               <div className="input-group-prepend">
                 <span className="input-group-text"><i className="fas fa-user"></i></span>

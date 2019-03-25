@@ -39,7 +39,7 @@ export default class Signup extends Component {
               <p>Please fill in this form to create an account!</p>
           </div>
 
-  <form id="signup" name="signup" method="post" action="/signup">
+  <form id="signup" name="signup" method="post" action="/mode">
               <div className="form-group">
     <div className="row">
       <div className="col-xs-4"><input type="text" className="text form-control" name="firstname" placeholder="First Name" required="required" /></div>
