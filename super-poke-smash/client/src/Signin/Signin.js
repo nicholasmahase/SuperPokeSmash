@@ -29,7 +29,7 @@ export default class Signin extends Component {
     axios
       .post("/api/users/login", { user: this.state })
       .then(function(res) {
-        //Fisrt we want to authenticate him,
+        //First we want to authenticate him,
         //We got to store the token in the localstorage
         // window.location.href = "./signin";
         //Save to localStorage
