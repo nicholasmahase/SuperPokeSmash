@@ -9,7 +9,6 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
     "bcrypt-nodejs": "0.0.3",
@@ -18,14 +17,18 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.0",
+    "mysql2": "^1.6.5"
   },
   "author": "",
   "license": "ISC",
+  "nodemonConfig": {
+    "ignore": [
+      "client/*"
+    ]
+  },
   "devDependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
@@ -36,15 +39,9 @@
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "if-env": "^1.0.4",
-    "jquery": "^1.9.1",
-    "localforage": "^1.7.3",
+    "mysql2": "^1.6.5",
     "pokedex": "^1.1.0",
-    "popper.js": "^1.14.7",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.8.5",
-    "react-redux": "^6.0.1",
     "react-validation": "^3.0.7",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6"
+    "sequelize": "^5.1.1"
   }
 }
