@@ -15,8 +15,8 @@ import logger from 'redux-logger'
 import playerReducer from './reducers/reducers';
 
 
-//import 'bootstrap/dist/css/bootstrap.css';
-//import 'font-awesome/css/font-awesome.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
 import './index.css';
 
 import Router from './router';

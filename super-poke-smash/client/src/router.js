@@ -7,6 +7,18 @@ import localForage from "localforage";
 import axios from 'axios';
 import {loadApi} from './actions/playerActions';
 import { BrowserRouter } from 'react-router-dom';
+import Signup from "./Signup/Signup";
+import Signin from "./Signin/Signin";
+import About from './Pages/about/about.js';
+import Arena from './Pages/arena/arena.js';
+import Battle from './Pages/battle/battle.js';
+import Menu from './Pages/menu/menu.js';
+import Mode from './Pages/mode/mode.js';
+import Pokedex from './Pages/pokedex/pokedex.js';
+import Rules from './Pages/rules/rules.js';
+import Selection from './Pages/selection/selection.js';
+import LiveChat from "./livechat/chat";
+
 
 const mapStateToProps = (state) => ({ api: state.api });
 
@@ -34,8 +46,19 @@ class Router extends Component {
           this.props.api.selected ? 
             <BrowserRouter>
               <Switch>
-                <Route exact path='/' component={selection}/>
-                <Route path='/battle/:name' component={battle}/>
+                <Route exact path='/selection' component={selection}/>
+                <Route path='/battle' component={battle}/>
+                <Route exact path="/" component={Signup} />
+                <Route exact path="/signin" component={Signin} />
+                <Route path="/about" component={About} />
+                <Route path="/chat" component={LiveChat} />
+                <Route path="/arena" component={Arena} />
+                <Route path="/battle" component={Battle} />
+                <Route path="/menu" component={Menu} />
+                <Route path="/mode" component={Mode} />
+                <Route path="/pokedex" component={Pokedex} />
+                <Route path="/rules" component={Rules} />
+                <Route path="/selection" component={Selection} />
               </Switch> 
             </BrowserRouter>
           : 

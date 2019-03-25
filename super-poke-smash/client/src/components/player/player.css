@@ -1,0 +1,46 @@
+.thumbnail{ 
+    position: relative;
+}
+.attacking{
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.list-group-item{
+    padding: 3px 7px;
+    font-size: 0.9em;
+}
+.list-group{
+    margin-bottom: 0;
+}
+.attack-name::first-letter{
+    text-transform: uppercase;
+}
+.attack-name{
+    display: block;
+}
+img{
+    max-width: 100px;
+    display: block;
+    margin: auto;
+}
+.title{
+    padding:0 9px;
+}
+.thumbnail.with-hover:hover{
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+}
+.container-image{
+    height: 120px;
+}
+.warning{
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.danger{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
