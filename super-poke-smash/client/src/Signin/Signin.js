@@ -2,6 +2,21 @@ import React, { Component } from "react";
 import "./Signin.css";
 
 import axios from "axios";
+import jwt_decode from "jwt-decode";
+//CHeck to see if the token is already stored here
+// if (localStorage.jwtToken) {
+//   const decode = jwt_decode(localStorage.jwtToken);
+//   console.log(decode);
+
+//   const currentTime = Date.now();
+//   if (decode.exp < currentTime) {
+//     window.location.href = "./menu";
+//   } else {
+//     window.location.href = "./";
+//   }
+// } else {
+//   window.location.href = "./";
+// }
 
 export default class Signin extends Component {
   constructor(props) {
@@ -36,6 +51,15 @@ export default class Signin extends Component {
         const { token } = res.data;
         // Set to localStorage
         localStorage.setItem("jwtToken", token);
+
+        //Set the axioon header with the token
+
+        if (token) {
+          axios.defaults.headers.common["Authorization"] = token;
+          window.location.href = "./menu";
+        } else {
+          delete axios.defaults.headers.common["Authorization"];
+        }
       })
       .catch(function(err) {
         console.log(err);
