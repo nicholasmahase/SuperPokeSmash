@@ -5,16 +5,18 @@ const bodyParser = require("body-parser");
 
 
 let PORT = process.env.PORT || 3004;
-let app = express ();
+let app = express();
 
-app.use (bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(bodyParser.json());
-// app.use (express.static(_dirname + "/client/v1.7/dist"));
+app.use(express.static(_dirname + "/client/build));
 
-app.use(routes)
+      app.use(routes)
 
-db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`App is listening on ${PORT}`);
-  });
-});
+      db.sequelize.sync().then(() => {
+        app.listen(PORT, () => {
+          console.log(`App is listening on ${PORT}`);
+        });
+      });
