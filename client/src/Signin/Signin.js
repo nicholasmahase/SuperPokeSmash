@@ -83,9 +83,6 @@ export default class Signin extends Component {
               >
                 <div className="col-xs-4">
                   <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fas fa-user" />
-                    </span>
                   </div>
                   <input
                     type="text"
@@ -99,9 +96,6 @@ export default class Signin extends Component {
                 </div>
                 <div className="col-xs-4">
                   <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fas fa-key" />
-                    </span>
                   </div>
                   <input
                     type="password"

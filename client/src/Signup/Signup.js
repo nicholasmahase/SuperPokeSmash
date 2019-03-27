@@ -46,17 +46,11 @@ export default class Signup extends Component {
   render() {
     return (
       <div className="container">
-        <div className="d-flex justify-content-center h-100">
-          <div className="card">
-            <div className="card-header">
-              <h1>Sign Up</h1>
-            </div>
-            <p>Please fill in this form to create an account!</p>
-          </div>
-
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account!</p>
           <form id="signup" name="signup" onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <div className="row">
+              <div className="row clearfix">
                 <div className="col-xs-4">
                   <input
                     type="text"
@@ -123,7 +117,6 @@ export default class Signup extends Component {
               </div>
             </div>
           </form>
-        </div>
         <div className="card-footer">
           <div className="d-flex justify-content-center links">
             <div className="hint-text">
