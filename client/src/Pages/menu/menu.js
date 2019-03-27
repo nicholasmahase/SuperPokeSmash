@@ -16,7 +16,7 @@ export default class Menu extends Component {
                     <div className="menulist">
                         <ul>
                             <li><a className="startgame" href="/mode">Start Game</a></li>
-                            <li><a className="pokedex" href="/pokedex">Pokedex</a></li>
+                            <li><a className="pokedex-menu" href="/pokedex">Pokedex</a></li>
                             <li><a className="rules" href="/rules">Rules</a></li>
                             <li><a className="about" href="/about">About</a></li>
                         </ul>
