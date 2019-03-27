@@ -490,7 +490,7 @@ class Battle extends Component {
         $(".attack-list li").unbind("click");
         $(".attack-list").empty();
         $(".stadium .enemy").css({ padding: "0" });
-        $(".instructions p").text("Choose your hero");
+        $(".instructions p").text("Choose Your Pokemon");
 
         // set & start the opening game music
         $("audio.music").attr("src", music["opening"]);
@@ -567,7 +567,7 @@ class Battle extends Component {
               $(".attack-list").addClass("disabled");
 
               // update instructions
-              $(".instructions p").text("Choose your enemy");
+              $(".instructions p").text("Choose Your Opponent");
               // set health bar value
               $(".stadium .hero progress").val(gameData.hero.hp.current);
 
@@ -595,7 +595,7 @@ class Battle extends Component {
               $(".stadium .enemy").css({ padding: "25px 0" });
 
               // update instructions
-              $(".instructions p").text("Fight!!!");
+              $(".instructions p").text("Battle!!!");
 
               // hide the hero list
               $(".characters")
@@ -780,9 +780,9 @@ class Battle extends Component {
 
           clearModal();
           $(".modal-in header").append(
-            '<h1>Your Hero has died</h1><span class="close">x</span>'
+            '<h1>Your Pokemon Died</h1><span class="close">x</span>'
           );
-          $(".modal-in section").append("<p>You lose, good day!");
+          $(".modal-in section").append("<p>You Lose, Have A Good Day!");
           $(".modal-out").slideDown("400");
           modalControls();
 
@@ -876,7 +876,7 @@ class Battle extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div className="container pokebattle">
         <div className="row">
           <div className="instructions">
             <p />

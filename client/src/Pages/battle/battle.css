@@ -10,6 +10,12 @@ body {
     max-height: 100px;
     cursor: pointer;
   }
+  .container.pokebattle {
+    max-width: 100% !important;
+    opacity: 0.8;
+    background: #000;
+    color: #fff;
+}
   strong {
     font-weight: 600;
     line-height: 1.5em;
@@ -134,6 +140,7 @@ body {
     position: initial;
     transition: opacity 0.3s ease;
     text-transform: capitalize;
+    color: #000;
   }
   .attack-list.disabled {
     opacity: 0.5;
@@ -184,6 +191,7 @@ body {
   }
   .modal-out .modal-in header h1 {
     font-size: 2.2em;
+    color: #000;
   }
   .modal-out .modal-in .close {
     cursor: pointer;
@@ -194,4 +202,5 @@ body {
   .modal-out .modal-in section {
     box-sizing: border-box;
     padding: 25px 3%;
+    color: #000;
   }
