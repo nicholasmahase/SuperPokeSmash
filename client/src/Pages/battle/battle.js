@@ -876,11 +876,13 @@ class Battle extends Component {
   }
   render() {
     return (
-      <div>
-        <div className="instructions">
-          <p />
+      <div className="container">
+        <div className="row">
+          <div className="instructions">
+            <p />
+          </div>
         </div>
-
+        
         <section className="characters" />
 
         <section className="stadium">
