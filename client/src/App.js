@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 import Signup from "./Signup/Signup";
 import Signin from "./Signin/Signin";
@@ -40,3 +40,5 @@ class App extends Component {
 }
 
 export default App;
+
+*/
