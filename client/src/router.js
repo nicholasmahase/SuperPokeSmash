@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import selection from './Pages/selection/selection.js';
-import battle from './Pages/battle/battle.js';
+import battle from './Pages/battle/battlepage.js';
 import {connect} from 'react-redux';
 import localForage from "localforage";
 import axios from 'axios';
@@ -11,7 +11,7 @@ import Signup from "./Signup/Signup";
 import Signin from "./Signin/Signin";
 import About from './Pages/about/about.js';
 import Arena from './Pages/arena/arena.js';
-import Battle from './Pages/battle/battle.js';
+import Battle from './Pages/battle/battlepage.js';
 import Menu from './Pages/menu/menu.js';
 import Mode from './Pages/mode/mode.js';
 import Pokedex from './Pages/pokedex/pokedex.js';
@@ -47,7 +47,6 @@ class Router extends Component {
             <BrowserRouter>
               <Switch>
                 <Route exact path='/selection' component={selection}/>
-                <Route path='/battle' component={battle}/>
                 <Route exact path="/" component={Signup} />
                 <Route exact path="/signin" component={Signin} />
                 <Route path="/about" component={About} />

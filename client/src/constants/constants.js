@@ -26,5 +26,3 @@ export const actionType = PropTypes.shape({
 });
 
 
-// WEBPACK FOOTER //
-// src/constants/custom-prop-types.js
